@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Operating System</title>
+</head>
+
+<body>
+    <div id="windows">
+        <div class="onLoading">
+            <img class="loadingLogo" src="./assets/images/onloading.png" alt="">
+            <img src="./assets/images/loading.gif" alt="">
+        </div>
+        <div class="refresh-container">
+
+        </div>
+        <div class="right-click-list">
+            <div class="view">
+                <p class="hoverOnView">View</p>
+                <div class="view-list">
+                    <p id="1">Extra Large Icons</p>
+                    <hr>
+                    <p id="2">Large Icons</p>
+                    <hr>
+                    <p id="3">Medium Icons</p>
+                    <hr>
+                    <p id="4">Small Icons</p>
+                </div>
+                <hr>
+            </div>
+            <div class="refresh">
+                <p class="onRefresh">Refresh</p>
+                <hr>
+            </div>
+            <div class="settings">
+                <p>Settings</p>
+                <hr>
+            </div>
+            <div class="properties">
+                <p>Properties</p>
+                <hr>
+            </div>
+
+        </div>
+        <div class="your-notes dragable">
+            <div class="head">
+                <div class="minimize">-</div>
+                <div class="cross hide-note">X</div>
+            </div>
+            <div class="content">
+                <form id="form" action="#">
+                    <input type="text" placeholder="Add a note title" name="" id="note-title">
+                    <textarea placeholder="Add a personal note" id="note" cols="40" rows="4"></textarea>
+                    <input class="note-add-btn" type="submit" value="Add Note">
+                    <p id="gotError" style="color: red; display: none;">Unable to add. Your Text Maybe Short Or Empty</p>
+                </form>
+                <div class="cards">
+                    <!--cards will be add using javascript -->
+                </div>
+            </div>
+        </div>
+        <div class="my-computers">
+            <div class="head">
+                <div class="minimize">-</div>
+                <div class="cross hide-computer">X</div>
+            </div>
+            <div class="computer-content">
+                <div class="c-drive">
+                    <img src="./assets/images/ssd_999px.png" class="desktop-icon" alt="">
+                    <p>Local Disk C</p>
+                </div>
+                <div class="d-drive">
+                    <img src="./assets/images/ssd_999px.png" class="desktop-icon" alt="">
+                    <p>Local Disk D</p>
+                </div>
+                <div class="e-drive">
+                    <img src="./assets/images/ssd_999px.png" class="desktop-icon" alt="">
+                    <p>Local Disk E</p>
+                </div>
+                
+            </div>
+        </div>
+        <div class="desktop">
+            <div class="my-computer desktop-element myhiddencomputer">
+                <img class="desktop-icon" src="./assets/images/computer.png" alt="my computer">
+                <div contenteditable="true" class="text">My Computer</div>
+            </div>
+            <div class="my-computer desktop-element myhiddennotes">
+                <img class="desktop-icon" src="./assets/images/icons8_goodnotes_999px.png" alt="my computer">
+                <div contenteditable="true" class="text">Personal Notes</div>
+                <div class="content">
+
+                </div>
+            </div>
+            <div class="my-computer desktop-element">
+                <img class="desktop-icon" src="./assets/images/icons8_vlc_999px_1.png" alt="my computer">
+                <div contenteditable="true" class="text">Vlc Media Player</div>
+            </div>
+        </div>
+        <div class="taskbar">
+            <div class="logo"><img class="taskbar-icon logo" src="./assets/images/microsoft.png" alt="logo"></div>
+            <div class="searchBar">
+                <img class="taskbar-icon" src="./assets/images/search.png" alt="search">
+                <input type="text" placeholder="Type here to search" id="">
+            </div>
+            <div class="middle-taskbar-icons">
+                <img class="taskbar-icon middle-taskbar-icons-margin" src="./assets/images/file explorer.png" alt="">
+                <img class="taskbar-icon middle-taskbar-icons-margin" src="/assets/images/settings.png" alt="">
+                <img class="taskbar-icon middle-taskbar-icons-margin" src="/assets/images/cli.png" alt="">
+            </div>
+            <div class="right-taskbar-icons">
+                <img class="taskbar-small-icon" src="/assets/images/sound.png" alt="">
+                <img class="taskbar-small-icon" src="/assets/images/battery.png" alt="">
+                <div class="date"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./assets/js/logic.js"></script>
+
+</html>
